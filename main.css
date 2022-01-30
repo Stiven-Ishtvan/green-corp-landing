@@ -418,6 +418,7 @@ header{
 
 .features__feedback {
   display: flex;
+  padding: 115px 60px;
 }
 
 .features__feedback-left {
