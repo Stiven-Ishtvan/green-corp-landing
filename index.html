@@ -17,8 +17,8 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
   <header>
     <img class="header__logo" src='img/logo.svg'>
     <div class="header__controls">
-        <a href="#contacts">Контакты</a>
-        <button>Заказать</button>
+        <a href="#form">Контакты</a>
+        <button href="#zakaz">Заказать</button>
     </div>
     
   </header>
@@ -29,7 +29,7 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
     <div class="about__info animate__animated animate__fadeInLeft animate__slow">
       <h1>Солнечные панели GreenRobotic</h1>
       <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-      <button>Узнать подробнее <i class="fas fa-angle-right"></i></button>
+      <button class="more-button" href="#features">Узнать подробнее <i class="fas fa-angle-right"></i></button>
     </div>
     <div class="about__images animate__animated animate__fadeInRight animate__slow">
       <img class="about__sun-image animation" src="img/sun.png" >
@@ -75,9 +75,9 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
   <div class="features__feedback" >
     <div class="features__feedback-left">
       <h2>
-         Нам доверяет
+        Нам доверяет
         <br>
-         5000+ счастливых клиентов
+        <div class="features__clients-count">5000+</div> счастливых клиентов
       </h2>
       <p>
          Мы помогли тысячам людей перейти на зеленую энергию.
@@ -127,9 +127,9 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
   </section>
 
 
-  <section class="form animate__animated animate__fadeIn animate__slow">
+  <section class="form" id="form">
     <div class="form__containter">
-    <h1>Оставьте свои <br>контакты.</h1>
+      <h1 name="zakaz">Оставьте свои контакты</h1>
     <p><br>Поможем подобрать модель. <br>Выбрать удобный вариант доставки и установки. <br>Гарантия возврата денег.</p>
     <form>
       <div class="form__group">
@@ -147,13 +147,16 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
         <label for="budget">Примерный бюджет</label>
         <select id="budget">
           <option>Выберите вариант</option>                
-          <option value="10 000₽ – 30 000₽">10-30</option>
-          <option value="30 000₽ – 60 000₽">30-60</option>
-          <option value="60 000₽ – 100 000₽">60-100</option>
-          <option value="100 000₽">100+</option>
+          <option value="10-30">10 000₽ – 30 000₽</option>
+          <option value="30-60">30 000₽ – 60 000₽</option>
+          <option value="60-100">60 000₽ – 100 000₽</option>
+          <option value="other">
+            Другое
+          </option>
         </select>
       </div>
-      </div>  
+      </div> 
+       
       <button type="submit" class="form__submit">Отправить заявку</button>        
     </form>
     </div>
@@ -176,7 +179,7 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
     <div class="footer__group">
       <h3>Компания</h3>
       <div class="footer__links">
-        <a href="#">Контакты</a>
+        <a name="contacts">Контакты</a>
         <a href="#">Вакансии</a>
         <a href="#">СМИ</a>
       </div>
@@ -188,5 +191,6 @@ integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEB
   </footer>
   <!-- /* ... */ -->
   <script src="js/canvas.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html> 

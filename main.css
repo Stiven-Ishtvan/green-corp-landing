@@ -14,6 +14,17 @@ header{
     background-color: #ffffff;
     padding: 0;
     z-index: 1;
+    
+  position: fixed;
+  background: none;
+  left: 0;
+  right: 0;
+  transition: box-shadow, background-color .25s ease;
+  }
+
+  .header__scrolled {
+    background-color: white;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
   }
 
   .header__logo {
@@ -64,7 +75,8 @@ header{
     align-items: center;
     justify-content: space-around;
     padding-bottom: 115px;
-    padding-top: 115px;
+    
+    padding-top: 200px;
 
     background: url('img/back.png') no-repeat;
     background-position: center;
@@ -307,6 +319,7 @@ header{
 
   .about {
       flex-direction: column-reverse;
+      padding-top: 200px;
       padding: 50px 10px;
   }
 
